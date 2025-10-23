@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #333;
+}
+
+.nav-left a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.nav-right button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1px;
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    padding: 0px 10px;
+}
+
+.left {
+    flex: 1;
+    text-align: right;
+}
+
+.right {
+    flex: 2;
+}
+
+input {
+    width: 90%;
+    height: 50px;
+    font-size: 2rem;
+    padding: 20px;
+    border-radius: 7px;
+    border-color: rgb(0, 255, 55);
+    border-width: 2px;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 10px;
+    background-color: #b3aaaa;
+    color: white;
+}
+
+#resultScreen {
+    width: 91%;
+    height: 50px;
+    padding: 20px;
+    background-color: #332703;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    border-radius: 7px;
+    border-color: rgb(241, 233, 232);
+    border-width: 2px;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5%;
+    background-color: rgb(75, 74, 74);
+    color: white;
+    text-align: center;
+}
+
+/* --- Dark Mode Styles --- */
+
+/* This rule was in your original file, now correctly nested under dark mode */
+[data-bs-theme="dark"] .dark-mode {
+    background-color: rgb(8, 19, 20);
+    color: white;
+}
+
+[data-bs-theme="dark"] body {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+[data-bs-theme="dark"] header,
+[data-bs-theme="dark"] footer {
+    background-color: #1f1f1f;
+}
+
+[data-bs-theme="dark"] .container {
+    background-color: #1f1f1f;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+[data-bs-theme="dark"] input,
+[data-bs-theme="dark"] button {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #666;
+}
+
+[data-bs-theme="dark"] #resultScreen {
+    background-color: #444; /* Added a dark mode style for your result screen */
+    border-color: #666;
+}
+
+[data-bs-theme="dark"] a {
+    color: #ff6666;
+}

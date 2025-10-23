@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MUhammad Ibrahim Naveed</title>
-    
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="css/style.css">
     <link
   href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
   rel="stylesheet"
@@ -26,13 +27,39 @@
             <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">CSS</a>
         </div>
         <div class="nav-right">
-            <button data-bs-theme-value="dark" onclick="toggleDarkMode(true)">Dark</button>
-            <button data-bs-theme-value="light" onclick="toggleDarkMode(false)">Light</button>
+            <button data-bs-theme-value="dark">Dark</button>
+            <button data-bs-theme-value="light">Light</button>
             <button>Contact Me</button>
         </div>
     </nav>
 </header>
 
+<main>
+    <div class="container">
+        <H3> Your Factorial Calculator</H3>
+        <div class="row">
+            <div class="column left">
+                
+                <p>Enter a number:</p>
+            </div>
+            <div class="column right">
+                <input type="number" id="factorialInput" placeholder="Enter a number">
+            </div>
+        </div>
+        <div class="row">
+            <div class="column left">
+                <button onclick="calculateFactorial()">Enter</button>
+            </div>
+            <div class="column right">
+                <div id="resultScreen">Result will be displayed here</div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="footer">Muhammad Ibrahim Naveed factorial Calculator  &copy; 2025 </div>
+</footer>
 
 </body>
 </html>
